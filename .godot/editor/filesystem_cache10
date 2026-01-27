@@ -1,19 +1,22 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769356179
+::res://::1769545748
 asset sources.txt::TextFile::-1::1769355463::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::5991746675164270125::1769355463::1769356181::1::::<><><>0<>0<>b524d7562d655860d6e95c77f9f4f098<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://audio/::1769355463
+README.md::TextFile::-1::1769356392::0::1::::<><><>0<>0<><>::
+player.tscn::PackedScene::3069249019384507722::1769545901::0::1::::<><><>0<>0<><>::uid://bkgrir378horu::::res://graphics/player/player_simple.png<>uid://bpf61kdirs6ek::::res://player.gd
+player.gd::GDScript::3451504414706032622::1769545748::0::1::::<>Node2D<><>0<>0<><>::
+::res://audio/::1769356181
 S31-City on Speed.ogg::AudioStreamOggVorbis::8977675062932144427::1769355463::1769356181::1::::<><><>0<>0<>6a19a5d98227eeea5167bfcfc2d2e4d1<>res://.godot/imported/S31-City on Speed.ogg-ac786f73a31395cb077a5bf379e46f56.oggvorbisstr::
-::res://fonts/::1769355463
+::res://fonts/::1769356181
 Better VCR 9.0.1.ttf::FontFile::525264482665087361::1769355463::1769356181::1::::<><><>0<>0<>8d43a50de6a81ca6d2e0f8885d97867a<>res://.godot/imported/Better VCR 9.0.1.ttf-0b419d366d973ba1e1c2e6cc67cd81b7.fontdata::
 Crackman.otf::FontFile::8409775716835545339::1769355463::1769356181::1::::<><><>0<>0<>f2dd4031c9271265ef834194efd2619e<>res://.godot/imported/Crackman.otf-07c10da7ed8c2bafac2e3556ecebe10c.fontdata::
-::res://graphics/::1769355463
+::res://graphics/::1769356181
 map.png::CompressedTexture2D::8154739344879193416::1769355463::1769356181::1::::<><><>0<>0<>219b8eea25924c4b39ef0368583c17ae<>res://.godot/imported/map.png-4c90a2691f1826b62871a53c820579c2.ctex::
-::res://graphics/cars/::1769355463
+::res://graphics/cars/::1769356182
 green.png::CompressedTexture2D::8921634929582336167::1769355463::1769356182::1::::<><><>0<>0<>078591b37dde64353729b5c02cf6c60f<>res://.godot/imported/green.png-d28274fa609b805fd959f559bdba4d8f.ctex::
 red.png::CompressedTexture2D::987328342467456120::1769355463::1769356182::1::::<><><>0<>0<>556da895b292eeaa931a703ff378a03f<>res://.godot/imported/red.png-51ddd5de1dc8feccc945a4baf874f0d3.ctex::
 yellow.png::CompressedTexture2D::7448227804407725056::1769355463::1769356182::1::::<><><>0<>0<>07c2fd3ba648deb2ad0c4de1ee3f4445<>res://.godot/imported/yellow.png-4c060fe8254603acf62781ecd3bf39dd.ctex::
-::res://graphics/objects/::1769355463
+::res://graphics/objects/::1769356182
 barrier.png::CompressedTexture2D::6896529938505155778::1769355463::1769356182::1::::<><><>0<>0<>13bd4839ba84fe7928f2dc108162d5ef<>res://.godot/imported/barrier.png-d2e97a63c5048a3bb9b830d4bb07b1c6.ctex::
 bench.png::CompressedTexture2D::6429655348521337844::1769355463::1769356182::1::::<><><>0<>0<>d5eda31ffc23ab4e7155e6d6c70c17b2<>res://.godot/imported/bench.png-3aee9bd1c27c595cfd48123167057493.ctex::
 bin.png::CompressedTexture2D::2682534749361739666::1769355463::1769356182::1::::<><><>0<>0<>cb20d88ff12138525d6859538e811140<>res://.godot/imported/bin.png-e97ea6b5936d84f01b2dcca24830f780.ctex::
@@ -33,7 +36,9 @@ traffic.png::CompressedTexture2D::5133731283848118079::1769355463::1769356181::1
 tree1.png::CompressedTexture2D::8952052314239774675::1769355463::1769356181::1::::<><><>0<>0<>2d76277e61a693c164a7b3903d0ec15e<>res://.godot/imported/tree1.png-bfe3ba1424c73f70b9664efe47fff273.ctex::
 tree2.png::CompressedTexture2D::1743130296563490364::1769355463::1769356181::1::::<><><>0<>0<>77e690f9019976749dce4b90216de985<>res://.godot/imported/tree2.png-41c170419ac41ac379bbfdd2b3f6275e.ctex::
 tree potted.png::CompressedTexture2D::3389544860567921485::1769355463::1769356181::1::::<><><>0<>0<>444af9e31bd639958fbc034e4fbe105d<>res://.godot/imported/tree potted.png-500e30dcffdb189ddfcf9f6ad3dd724c.ctex::
-::res://graphics/player/::1769355463
+::res://graphics/player/::1769356181
 player_simple.png::CompressedTexture2D::3101742799475853270::1769355463::1769356181::1::::<><><>0<>0<>1c5e0eae2902f400d93138ed015c3d2b<>res://.godot/imported/player_simple.png-da0d067e94fb2205dce5f6ce7ba473b7.ctex::
 player_tileset.png::CompressedTexture2D::6843235375669234817::1769355463::1769356181::1::::<><><>0<>0<>21c29d67251e95d2bb7dfe9729d2bb88<>res://.godot/imported/player_tileset.png-4ca3aae43be08322f35644f77e38bfeb.ctex::
-::res://scenes/::1769356062
+::res://scenes/::1769545733
+game.tscn::PackedScene::7544890810589061561::1769545913::0::1::::<><><>0<>0<><>::uid://doghmovcgeltw::::res://graphics/map.png<>uid://bjy1c24lq0gf7::::res://player.tscn
+exercise_object.tscn::PackedScene::2212158074935195814::1769545894::0::1::::<><><>0<>0<><>::
