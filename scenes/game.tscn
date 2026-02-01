@@ -12,7 +12,6 @@ texture = ExtResource("1_yqjtg")
 
 [node name="Player" parent="." instance=ExtResource("2_lnu2h")]
 position = Vector2(578, 385)
-scale = Vector2(6, 6)
 
 [node name="ExerciseObject" parent="." instance=ExtResource("3_lnu2h")]
 position = Vector2(605, 538)
