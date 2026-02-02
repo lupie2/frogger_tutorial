@@ -1,4 +1,2 @@
-res://scenes/exercise_object.gd
-res://scenes/game.tscn
 res://scenes/player.tscn
-res://scenes/exercise_object.tscn
+res://player.gd

@@ -1,10 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://dfq2iqhuccltx"]
+[gd_scene load_steps=8 format=3 uid="uid://dfq2iqhuccltx"]
 
 [ext_resource type="Texture2D" uid="uid://doghmovcgeltw" path="res://graphics/map.png" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://bjy1c24lq0gf7" path="res://scenes/player.tscn" id="2_lnu2h"]
-[ext_resource type="PackedScene" uid="uid://6rt6j4h172du" path="res://scenes/exercise_object.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://6rt6j4h172du" path="res://scenes/tree.tscn" id="3_lnu2h"]
 
-[node name="Game" type="Node2D"]
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lnu2h"]
+normal = Vector2(1, 0)
+distance = -2.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lbhrr"]
+normal = Vector2(0, 1)
+distance = 3.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_iywne"]
+normal = Vector2(-1, 0)
+distance = -35.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p57ef"]
+
+[node name="CollisionShape2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(555, 325)
@@ -15,3 +29,29 @@ position = Vector2(578, 385)
 
 [node name="ExerciseObject" parent="." instance=ExtResource("3_lnu2h")]
 position = Vector2(605, 538)
+
+[node name="Borders" type="Node2D" parent="."]
+
+[node name="LeftBorder" type="StaticBody2D" parent="Borders"]
+position = Vector2(364, 11)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/LeftBorder"]
+shape = SubResource("WorldBoundaryShape2D_lnu2h")
+
+[node name="UpperBorder" type="StaticBody2D" parent="Borders"]
+position = Vector2(414, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/UpperBorder"]
+shape = SubResource("WorldBoundaryShape2D_lbhrr")
+
+[node name="RightBorder" type="StaticBody2D" parent="Borders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/RightBorder"]
+position = Vector2(713, 47)
+shape = SubResource("WorldBoundaryShape2D_iywne")
+
+[node name="DownBorder" type="StaticBody2D" parent="Borders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/DownBorder"]
+position = Vector2(417, 644)
+shape = SubResource("WorldBoundaryShape2D_p57ef")
