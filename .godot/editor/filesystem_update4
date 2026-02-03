@@ -1,2 +1,4 @@
-res://scenes/player.tscn
+res://scenes/game.tscn
+res://scenes/game.gd
 res://player.gd
+res://area_2d.tscn

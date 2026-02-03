@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://dfq2iqhuccltx"]
+[gd_scene load_steps=10 format=3 uid="uid://dfq2iqhuccltx"]
 
+[ext_resource type="Script" uid="uid://4vxvmd16aeo1" path="res://scenes/game.gd" id="1_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://doghmovcgeltw" path="res://graphics/map.png" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://bjy1c24lq0gf7" path="res://scenes/player.tscn" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://6rt6j4h172du" path="res://scenes/tree.tscn" id="3_lnu2h"]
@@ -18,16 +19,20 @@ distance = -35.0
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p57ef"]
 
-[node name="CollisionShape2D" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lbhrr"]
+size = Vector2(140, 20)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Game" type="Node2D"]
+script = ExtResource("1_lbhrr")
+
+[node name="BG" type="Sprite2D" parent="."]
 position = Vector2(555, 325)
 texture = ExtResource("1_yqjtg")
 
 [node name="Player" parent="." instance=ExtResource("2_lnu2h")]
 position = Vector2(578, 385)
 
-[node name="ExerciseObject" parent="." instance=ExtResource("3_lnu2h")]
+[node name="Tree" parent="." instance=ExtResource("3_lnu2h")]
 position = Vector2(605, 538)
 
 [node name="Borders" type="Node2D" parent="."]
@@ -55,3 +60,17 @@ shape = SubResource("WorldBoundaryShape2D_iywne")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/DownBorder"]
 position = Vector2(417, 644)
 shape = SubResource("WorldBoundaryShape2D_p57ef")
+
+[node name="FinishArea2D" type="Area2D" parent="Borders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/FinishArea2D"]
+position = Vector2(571, 114)
+shape = SubResource("RectangleShape2D_lbhrr")
+
+[node name="Timer" type="Node" parent="."]
+
+[node name="CarTimer" type="Timer" parent="Timer"]
+wait_time = 4.0
+autostart = true
+
+[connection signal="body_entered" from="Borders/FinishArea2D" to="." method="_on_finish_area_2d_body_entered"]
