@@ -1,7 +1,9 @@
-res://area_2d.tscn
-res://scenes/game.gd
 res://scenes/game.tscn
-res://scenes/car.gd
 res://scenes/car.tscn
-res://scenes/tree.tscn
-res://scenes/player.tscn
+res://scenes/car.gd
+res://scenes/title.tscn
+res://scenes/game.gd
+res://scenes/title.gd
+res://scenes/global.tscn
+res://scenes/global.gd
+res://player.gd
